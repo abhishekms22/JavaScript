@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript try-catch Statement</title>
+</head>
+<body>
+    <script>
+    try {
+        var a = prompt("Enter the value of a");
+        var b = prompt("Enter the value of b");
+        var div = a/b;
+        if(b==0){
+            throw new Error("An invalid entry is defined");
+        }
+        
+        // Trying to access a non-existent variable
+        document.write(div);
+        
+
+    } catch(err)
+    
+     {
+        // Handle the error
+      alert("Caught error: " + err.message);
+    }
+     
+    // Continue execution
+    document.write("<p>Hello World!</p>");
+    </script>
+</body>
+</html>
