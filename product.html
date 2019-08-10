@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            function Sum () 
+            {
+                var ans = 0;
+                var dop = Sum.arguments.length;
+                for(i=0; i<dop; i++)
+                {
+                    ans+= Sum.arguments[i];
+                }
+                document.write("the sum is: "+ans);
+                document.write('<br>');
+            }
+
+        </script>
+    </head>
+    <body>
+        <script>
+        Sum(10, 20);
+        Sum(10, 20, 30, 40);
+        Sum(12,34,56,78,90,23,45,67,89,90);
+        </script>
+    </body>
+</html>
