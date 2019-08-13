@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <h2>JavaScript Arrow Function</h2>
+        <p id="demo">
+        </p>
+
+        <p id="square"></p>
+        
+        <script>
+        var hello;
+        hello = (name) => "hello World "+name;
+        document.write(hello("Abhishek"));
+
+        const square = (num) => num*num;
+        document.getElementById("square").innerHTML=square(9);
+
+        var points = (multiplier, bonus) => {
+            var score = multiplier * 10;
+            score *= (1 + bonus);
+            return score;
+        };
+
+        document.write(points(3,2));
+
+        var greatest=(a,b)=> {
+            if(a>b){
+                document.write("<br>"+a+" is greater");
+            }
+            else
+            document.write("<br>"+b + " is greater");
+        };
+
+        greatest(45,65);
+        </script>
+    </body>
+</html>
